@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="style.css">
+ <title>Portofolio - Bayu Candra Y</title>
+</head>
+<body>
+ <section id="home">
+    <div class="container">
+     <div class="navwrapper">
+      <ul class="navigation">
+       <li class="nav">
+        <a href="#home" class="navlink">Home</a>
+       </li>
+      <li class="nav">
+       <a href="#about" class="navlink">About</a>
+      </li>
+      <li class="nav">
+       <a href="#contact" class="navlink">Contact</a>
+      </li>
+     </div>
+     <br>
+     <div class="contentwrapper">
+      <h1 class="typewriter-text" id="typewriter"></h1>
+     </div>
+    </div>
+ </section>
+ <section id="about">
+  <div class="container red">
+    <div class="contentwrapper">
+     <img src="gw.png" alt="Gua">
+      <br>
+      <h1>Bayu Candra</h1>
+      <h3>Nama Saya Bayu Candra Yudistira biasa di panggil Bayu, umur 16. Lahir di kota Bekasi pada tanggal 15 Mei 2007, saat ini sedang menduduki bangku kelas 11 di SMKN 1 KARAWANG dan mengambil Jurusan Rekayasa Perangkat Lunak ( RPL ),
+       hobi gak banyak tapi salah satunya adalah nonton Anime, Foto-foto sama Ngoding, Cita cita ingin jadi Programmer & Fotografer.
+       <p></p>
+      </h3>
+      <br>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+ <div class="container blue">
+   <div class="contentwrapper">
+     <h1>Contact</h1>
+     <div class="contact-form">
+      <form action="" method="">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required>
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required>
+
+       <label for="message">Message:</label>
+       <textarea id="message" name="message" rows="4" required></textarea>
+
+       <button type="button" id="sendButton">Send</button>
+        <div class="success-message" id="successMessage">
+          Message sent successfully!
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</section>
+ <div class="top" onclick="goToTop()">☝️</div>
+ <script src="script.js"></script>
+</body>
+</html>
