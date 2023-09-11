@@ -1,0 +1,370 @@
+section {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.blue {
+    background-color: slateblue;
+}
+
+.navwrapper {
+    width: 100%;
+    height: 80px;
+    background-color: crimson;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+.contentwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav:hover {
+    background-color: white;
+    border-radius: 10px;
+    transition: all ease-in-out .25s;
+}
+
+.nav:hover>a {
+    color: #222;
+}
+
+.navlink {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.top {
+    position: fixed;
+    bottom: 20;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    background-color: wheat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+   *, html, body {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       scroll-behavior: smooth;
+   }
+
+   body {
+       font-family: 'Patrick Hand', cursive;
+       background-color: #f0f0f0; /* Add a background color for better visibility */
+   }
+
+   section {
+       min-height: 100vh;
+   }
+
+   .container {
+       width: 100%;
+       background-color: #222;
+   }
+
+   .red {
+       background-color: crimson;
+   }
+
+   .blue {
+       background-color: slateblue;
+   }
+
+   .navwrapper {
+       width: 100%;
+       height: 80px;
+       background-color: dodgerblue;
+       position: fixed;
+       top: 0;
+       left: 0;
+   }
+
+   h1 {
+       text-align: center;
+       font-size: 60px;
+       color: white;
+   }
+
+   h3 {
+    text-align: center;
+       font-size: 20px;
+       color: white;
+   }
+
+   .contentwrapper {
+       display: flex;
+       flex-direction: column; /* Stack elements vertically */
+       justify-content: center;
+       align-items: center;
+       text-align: center; /* Center text */
+       padding: 20px;
+   }
+
+   .navigation {
+       display: flex;
+       justify-content: center ; /* Center navigation items */
+       align-items: center;
+       height: 100%;
+   }
+
+   .nav {
+       list-style-type: none;
+       padding: 18px;
+       margin: 5px;
+       cursor: pointer;
+   }
+
+   .nav:hover {
+       background-color: white;
+       border-radius: 10px;
+       transition: all ease-in-out .25s;
+   }
+
+   .nav:hover>a {
+       color: #222;
+   }
+
+   .navlink {
+       color: white;
+       font-size: 1.2em;
+       font-weight: 600;
+       text-decoration: none;
+   }
+
+   .top {
+       position: fixed;
+       bottom: 20px;
+       right: 20px;
+       width: 75px;
+       height: 75px;
+       background-color: wheat;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   } 
+   /* Add this CSS code at the end of your existing CSS */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navigation {
+      justify-content: center;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 769px) {
+    .navigation {
+      justify-content: flex-start;
+    }
+  }
+
+  /* Mobile Styles */
+@media (max-width: 768px) {
+    img {
+      width: 40%;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 769px) {
+    img {
+        width: 30%;
+      }
+  }
+
+  /* Mobile Styles */
+@media (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 769px) {
+    img {
+        font-size: 60px;
+      }
+  }
+
+  /* Tampilan formulir kontak */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 5%;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+ /* Gaya tombol Send */
+.contact-form button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Sesuaikan padding horizontal dan vertikal */
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #222;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 15px;
+    }
+  
+    .contact-form label {
+      font-size: 1.1em;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 1em;
+    }
+  
+    .contact-form button {
+      font-size: 1.1em;
+    }
+  }
+  
+  /* Desktop Styles (melebar saat dibuka di desktop) */
+  @media (min-width: 769px) {
+    .contact-form {
+      max-width: 700px; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
+    }
+  }
+  /* Gaya pesan berhasil */
+.success-message {
+    display: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    animation: showSuccess 0.5s ease-in-out;
+  }
+  
+  .success-text {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  @keyframes showSuccess {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* Gaya teks animasi ketik */
+.typewriter-text {
+    overflow: hidden; /* Membuat teks yang berlebihan di luar kotak tersembunyi */
+    white-space: nowrap; /* Mencegah teks melompat ke baris berikutnya */
+    border-right: 2px solid white; /* Membuat efek kursor berkedip */
+    margin: 0 auto; /* Pusatkan teks dalam kontainer */
+    animation: typing 3s steps(40) 1s 1 normal both, blink-caret 0.5s step-end infinite;
+  }
+  
+  /* Keyframes untuk animasi ketik */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  
